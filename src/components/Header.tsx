@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { toggleStateAtom } from '../atom';
@@ -20,7 +21,7 @@ function Header({ history }: any) {
 		</Container>
 	);
 }
-export default Header;
+export default withRouter(Header);
 const Container = styled.section`
 	display: flex;
 	justify-content: space-between;
