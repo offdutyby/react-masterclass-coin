@@ -6,12 +6,8 @@ const Router = () => {
 	return (
 		<HashRouter basename={process.env.PUBLIC_URL}>
 			<Switch>
-				<Route path="/:coinId">
-					<Coin />
-				</Route>
-				<Route path={'/'}>
-					<Coins />
-				</Route>
+				<Route path="/:coinId" component={Coin}></Route>
+				<Route path="/" component={Coins}></Route>
 			</Switch>
 		</HashRouter>
 	);
