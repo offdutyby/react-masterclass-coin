@@ -1,5 +1,6 @@
+import { ReactQueryDevtools } from 'react-query/devtools';
 import { useRecoilValue } from 'recoil';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { toggleStateAtom } from './atom';
 import Router from './Router';
 import { darkTheme, LightTheme } from './theme';
