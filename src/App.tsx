@@ -1,9 +1,9 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import Router from './Router';
 import { ReactQueryDevtools } from 'react-query/devtools';
-import { LightTheme, darkTheme } from './theme';
-import { RecoilRoot, useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilValue } from 'recoil';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { toggleStateAtom } from './atom';
+import Router from './Router';
+import { darkTheme, LightTheme } from './theme';
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
